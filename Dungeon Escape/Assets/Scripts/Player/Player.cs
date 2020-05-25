@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
+    public int Gems;
 
     private Rigidbody2D rigid;
     private PlayerAnimation playerAnimation;
     private bool ResetJump = false;
     private bool Grounded = false;
-    
+
+    public int health { get; set; }
     [SerializeField]
     private float _jumpForce = 5.0f;
     [SerializeField]
     private float speed = 5.0f;
-
     [SerializeField]
     private LayerMask groundLayer;
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -100,5 +102,11 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         ResetJump = false;
     }
-     
+
+    public void Damage() {
+        Debug.Log("Player took damage");
+
+
+        
+    }
 }

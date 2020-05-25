@@ -12,6 +12,20 @@ public class Skeleton : Enemy,IDamageable {
     }
 
     public void Damage() {
+        if (isDead == true) {
+            return;
+        }
+
+        health--;
+        anim.SetTrigger("Hit");
+        isHit = true;
+        anim.SetBool("InCombat", true);
+
+        if(health <= 0) {
+
+            anim.SetTrigger("Death");
+            isDead = true;
+        }
 
     }
 
