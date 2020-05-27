@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour, IDamageable
 {
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour, IDamageable
     void Update()
     {
         Movement();
-        if(Input.GetMouseButtonDown(0) && IsGrounded()) {
+        if((Input.GetMouseButtonDown(0) || CrossPlatformInputManager.GetButtonDown("A_Button")) && IsGrounded()) {
             playerAnimation.Attack();
         }
                  
@@ -44,13 +45,13 @@ public class Player : MonoBehaviour, IDamageable
     /// </summary>
     void Movement() {
 
-        float move = Input.GetAxisRaw("Horizontal");
+        float move = CrossPlatformInputManager.GetAxisRaw("Horizontal");
 
         Grounded = IsGrounded();
 
         Flip(move);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) {
+        if ((Input.GetKeyDown(KeyCode.Space) || CrossPlatformInputManager.GetButtonDown("B_Button")) && IsGrounded()) {
 
             Debug.Log("Jump!");
             rigid.velocity = new Vector2(rigid.velocity.x, _jumpForce); //add jump force
@@ -104,9 +105,22 @@ public class Player : MonoBehaviour, IDamageable
     }
 
     public void Damage() {
+
+        if(health < 1) {
+            return;
+        }
         Debug.Log("Player took damage");
+        health--;
+        UIManager.Instance.UpdateLivesRemaining(health);
 
-
+        if(health < 1) {
+            playerAnimation.Death();
+        }
         
+    }
+
+    public void AddGems(int amount) {
+        Gems += amount;
+        UIManager.Instance.UpdateGemCount(Gems);
     }
 }

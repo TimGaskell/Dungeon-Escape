@@ -18,9 +18,16 @@ public class UIManager : MonoBehaviour
 
     public Text GemCountText;
     public Image SelectionImage;
-
+    public Text GemCountHUD;
+    public Image[] healthBars;
     private void Awake() {
         _Instance = this;
+    }
+
+    public void UpdateGemCount(int count) {
+
+        GemCountHUD.text = "" + count;
+
     }
 
     public void OpenShop(int GemCount) {
@@ -32,5 +39,13 @@ public class UIManager : MonoBehaviour
 
         SelectionImage.rectTransform.anchoredPosition = new Vector2(SelectionImage.rectTransform.anchoredPosition.x, yPos);
         
+    }
+    public void UpdateLivesRemaining(int livesRemaining) {
+
+        for(int i = 0; i <= livesRemaining; i++) {
+            if(i == livesRemaining) {
+                healthBars[i].enabled = false;
+            }
+        }
     }
 }

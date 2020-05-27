@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 955, y: 494}
-  m_MaxSize: {x: 22010, y: 14044}
+  m_MinSize: {x: 951, y: 472}
+  m_MaxSize: {x: 22006, y: 14022}
   vertical: 1
-  controlID: 10220
+  controlID: 2021
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,10 +127,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1307
-  m_MinSize: {x: 955, y: 494}
-  m_MaxSize: {x: 22010, y: 14044}
+  m_MinSize: {x: 951, y: 472}
+  m_MaxSize: {x: 22006, y: 14022}
   vertical: 0
-  controlID: 10221
+  controlID: 2022
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,10 +152,10 @@ MonoBehaviour:
     y: 0
     width: 1528
     height: 1307
-  m_MinSize: {x: 444, y: 444}
-  m_MaxSize: {x: 8004, y: 8044}
+  m_MinSize: {x: 446, y: 444}
+  m_MaxSize: {x: 8006, y: 8044}
   vertical: 1
-  controlID: 10222
+  controlID: 2023
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,10 +177,10 @@ MonoBehaviour:
     y: 0
     width: 1528
     height: 712
-  m_MinSize: {x: 444, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+  m_MinSize: {x: 446, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 10223
+  controlID: 2024
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,7 +265,7 @@ MonoBehaviour:
   - {fileID: 10}
   - {fileID: 11}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,9 +302,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 178.22717, y: 462.67432, z: -313.04333}
+    m_Target: {x: 471.15186, y: 166.6547, z: -42.350708}
     speed: 2
-    m_Value: {x: 178.22717, y: 462.67432, z: -313.04333}
+    m_Value: {x: 471.15186, y: 166.6547, z: -42.350708}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 374.95905
+    m_Target: 638.4044
     speed: 2
-    m_Value: 374.95905
+    m_Value: 638.4044
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -389,7 +389,7 @@ MonoBehaviour:
     x: 375
     y: 73
     width: 1151
-    height: 694
+    height: 693
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &11
 MonoBehaviour:
@@ -415,7 +415,7 @@ MonoBehaviour:
     x: 375
     y: 73
     width: 1151
-    height: 694
+    height: 693
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -434,7 +434,7 @@ MonoBehaviour:
       e10: 0
       e11: 0.7568421
       e12: 0
-      e13: 287.8737
+      e13: 287.3737
       e20: 0
       e21: 0
       e22: 1
@@ -523,14 +523,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 1.2152332
       e01: 0
       e02: 0
-      e03: 0
+      e03: -81.07596
       e10: 0
-      e11: 1
+      e11: 1.2152332
       e12: 0
-      e13: 0
+      e13: 226.35829
       e20: 0
       e21: 0
       e22: 1
@@ -540,10 +540,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 694bd073b436a2c4289324de6a1bee69,
+  m_AnimatorController: {fileID: 9100000, guid: a19400939fd32694bb258dac9e458416,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -7715295277691592750, guid: 694bd073b436a2c4289324de6a1bee69,
+  - m_Target: {fileID: 4191516465037574357, guid: a19400939fd32694bb258dac9e458416,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -15250
+  m_LastSelectedObjectID: 22994
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -661,10 +661,10 @@ MonoBehaviour:
     y: 0
     width: 424
     height: 1307
-  m_MinSize: {x: 234, y: 494}
-  m_MaxSize: {x: 10004, y: 14044}
+  m_MinSize: {x: 230, y: 472}
+  m_MaxSize: {x: 10000, y: 14022}
   vertical: 1
-  controlID: 10169
+  controlID: 1987
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -722,21 +722,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c8c4ffff74fbffff0c4c00008a4c0000
+      m_ExpandedIDs: 3ef8ffff74fbffff265800001e590000d2590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Unit_1 (4)
-        m_OriginalName: Unit_1 (4)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -19164
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 16}
       m_SearchString: 
@@ -765,8 +765,8 @@ MonoBehaviour:
     y: 696
     width: 424
     height: 611
-  m_MinSize: {x: 234, y: 272}
-  m_MaxSize: {x: 10004, y: 10022}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -812,20 +812,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Imported/Dungeon Escape Assets/Sprites/Fonts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Imported/Dungeon Escape Assets/Sprites/Fonts
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\GitHub Folders\Unity Projects\Dungeon-Escape\Dungeon Escape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c330000
-    m_LastClickedID: 13132
-    m_ExpandedIDs: 000000009a2e0000de320000a233000032370000083a0000684200009244000058470000d6470000044f000000ca9a3b
+    m_SelectedIDs: 38530000
+    m_LastClickedID: 21304
+    m_ExpandedIDs: 00000000743000005c36000066370000523c0000823f00008a4a0000a6510000665200007e540000e05b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -853,7 +853,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a2e0000de320000a233000032370000083a000068420000d6470000044f000000ca9a3b
+    m_ExpandedIDs: 00000000743000005c36000066370000523c0000823f00008a4a0000a6510000665200007e540000e05b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -878,9 +878,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6ec4ffff
-    m_LastClickedInstanceID: -15250
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: d2590000
+    m_LastClickedInstanceID: 22994
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300005e2e0000dc2f000000000000ac4300003e4300001a2f0000de3600005a360000f43500009a340000ca35000048330000fc300000543500006c350000422e000032320000783b00000a45000070320000ac360000ca310000084500007e3d0000a24100003a430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -976,8 +976,9 @@ MonoBehaviour:
   - {fileID: 23}
   - {fileID: 24}
   - {fileID: 25}
+  - {fileID: 26}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 4
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1096,3 +1097,36 @@ MonoBehaviour:
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Services
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1952
+    y: 73
+    width: 606
+    height: 1288
+  m_ViewDataDictionary: {fileID: 0}
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/ads
+  m_GlobalObjectTypeName: 
+  m_RegisteredViewURLs:
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/ads
+  m_RegisteredViewInstances:
+  - {fileID: 0}
+  - {fileID: 0}
