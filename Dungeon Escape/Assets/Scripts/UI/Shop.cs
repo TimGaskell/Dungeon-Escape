@@ -29,6 +29,10 @@ public class Shop : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Button function used to determine which item in the shop the player has currently selected. It updates the item cost being selected, the item and repositions the UI to hover the item.
+    /// </summary>
+    /// <param name="item"> int selected item id </param>
     public void selectionItem(int item) {
         switch (item) {
             case 0: //Flame sword
@@ -49,6 +53,10 @@ public class Shop : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Button function used for buying the currently selected item in the shop. If the player has enough gems it will award the item, subtract its cost from the players total and exit.
+    /// If the player does not have enough gems, the shop will automatically close.
+    /// </summary>
     public void BuyItem() {
 
         if(player.Gems >= CurrentItemCost) {

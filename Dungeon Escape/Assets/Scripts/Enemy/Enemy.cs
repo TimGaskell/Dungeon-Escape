@@ -50,18 +50,21 @@ public abstract class Enemy : MonoBehaviour
     /// </summary>
     public virtual void Movement() {
 
+        //sets move to point as point a
         if (transform.position == pointA.position) {
             CurrentTarget = pointB.position;
             transform.localScale = new Vector3(1, 1, 1);
             anim.SetTrigger("Idle");
 
         }
+        //sets move to point as point b
         else if (transform.position == pointB.position) {
             CurrentTarget = pointA.position;
             transform.localScale = new Vector3(-1, 1, 1);
             anim.SetTrigger("Idle");
         }
 
+        //If not in combat move towards targeted position
         if (!isHit) {
             transform.position = Vector3.MoveTowards(transform.position, CurrentTarget, Speed * Time.deltaTime);
             if(CurrentTarget == pointA.position) {
@@ -72,9 +75,9 @@ public abstract class Enemy : MonoBehaviour
             }
         }
 
-        Vector3 direction = player.transform.localPosition - transform.localPosition;
+        Vector3 direction = player.transform.localPosition - transform.localPosition; //determine the direction of the player
 
-        if (anim.GetBool("InCombat") && direction.x > 0) {
+        if (anim.GetBool("InCombat") && direction.x > 0) { //sets enemy to face the player
             transform.localScale = new Vector3(1, 1, 1);
 
         }
@@ -84,6 +87,32 @@ public abstract class Enemy : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Function used for dealing damage to this enemy. Each times they take damage they lose 1 health. This also sets them into combat and will attack the player. 
+    /// If after taking damage they are bellow 0, they will play their death animation and drop a gem.
+    /// </summary>
+    public virtual void Damage() {
+        if (isDead == true) {
+            return;
+        }
+
+        Health--;
+        anim.SetTrigger("Hit");
+        isHit = true;
+        anim.SetBool("InCombat", true);
+
+        if (Health <= 0) {
+
+            anim.SetTrigger("Death");
+            isDead = true;
+            GameObject Gem = Instantiate(GemPrefab, transform.position, Quaternion.identity);
+            Gem.GetComponent<Diamond>().Gems = Gems;
+        }
+    }
+
+    /// <summary>
+    /// Function used for checking the distance between the enemy and the player. If the distance is greater than a set amount, they will come out of combat.
+    /// </summary>
     void CheckDistance() {
 
         float distance = Vector3.Distance(transform.localPosition, player.transform.localPosition);
@@ -93,7 +122,9 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Function used for attacking the player.
+    /// </summary>
     public virtual void Attack() {
         Debug.Log("My name is: " + this.gameObject.name);
     }

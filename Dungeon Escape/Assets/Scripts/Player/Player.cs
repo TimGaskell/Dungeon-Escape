@@ -104,6 +104,9 @@ public class Player : MonoBehaviour, IDamageable
         ResetJump = false;
     }
 
+    /// <summary>
+    /// Function used for damaging the player. Each time this is called it will damage the player by 1 point. It updates the UI and plays a death animation if the health falls beneath 1.
+    /// </summary>
     public void Damage() {
 
         if(health < 1) {
@@ -119,6 +122,10 @@ public class Player : MonoBehaviour, IDamageable
         
     }
 
+    /// <summary>
+    /// Function used for adding gems to the players gem count. Also links to the UI manager and updates the total count
+    /// </summary>
+    /// <param name="amount"> Int amount of gems being added </param>
     public void AddGems(int amount) {
         Gems += amount;
         UIManager.Instance.UpdateGemCount(Gems);

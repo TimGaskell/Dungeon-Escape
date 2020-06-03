@@ -13,21 +13,10 @@ public class Spider : Enemy,IDamageable
     }
 
     public override void Movement() {
-        
+        //do nothing
     }
 
-    public void Damage() {
-
-        if(isDead == true) {
-            return;
-        }
-        health--;
-        if (health <= 0) {
-
-            anim.SetTrigger("Death");
-            isDead = true;
-        }
-    }
+    
 
     public override void Attack() {
         base.Attack();

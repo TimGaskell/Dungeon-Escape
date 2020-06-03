@@ -42,6 +42,10 @@ public class PlayerAnimation : MonoBehaviour
         Playeranimator.SetTrigger("Attack");
         SwordAnimator.SetTrigger("SwordAnimation");
     }
+
+    /// <summary>
+    /// Sets the trigger on the player animation controller to have the death animation play
+    /// </summary>
     public void Death() {
         Playeranimator.SetTrigger("Death");
     }
